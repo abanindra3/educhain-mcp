@@ -1,0 +1,20 @@
+Command: "Generate 5 multiple-choice questions on Python loops"
+Response: [
+    {
+        "question": "What is the output of 'for i in range(3): print(i)'?",
+        "options": ["0 1 2", "1 2 3", "3 2 1", "None"],
+        "answer": "0 1 2"
+    },
+    ... (4 more questions)
+]
+
+Command: "Provide a lesson plan for teaching algebra"
+Response: {
+    "topic": "Algebra Basics",
+    "objectives": ["Understand variables", "Solve linear equations"],
+    "activities": [
+        "Introduction to variables (30 mins)",
+        "Solving simple equations (45 mins)"
+    ],
+    "assessment": "10-question worksheet"
+}

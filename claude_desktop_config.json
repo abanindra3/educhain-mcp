@@ -1,0 +1,14 @@
+{
+    "mcp_servers": [
+        {
+            "name": "EduChain Flask Server",
+            "url": "http://localhost:5000",
+            "endpoints": {
+                "generate_mcqs": "/generate_mcqs",
+                "generate_lesson_plan": "/generate_lesson_plan",
+                "generate_flashcards": "/generate_flashcards"
+            },
+            "enabled": true
+        }
+    ]
+}
