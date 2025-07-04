@@ -19,7 +19,7 @@ def generate_mcqs_endpoint():
         topic = data.get('topic', '')
         count = int(data.get('count', 5))
 
-        mcqs = generator.generate_mcqs(topic=topic, count=count)  # ✅ CORRECTED
+        mcqs = generator.generate_mcqs(topic=topic, count=count) 
 
         return jsonify({"data": mcqs})
     except Exception as e:
@@ -32,7 +32,7 @@ def generate_lesson_plan_endpoint():
         data = request.json
         subject = data.get('subject', '')
 
-        lesson_plan = generator.generate_lesson_plan(topic=subject)  # ✅ CORRECTED
+        lesson_plan = generator.generate_lesson_plan(topic=subject)  
 
         return jsonify({"data": lesson_plan})
     except Exception as e:
@@ -49,7 +49,7 @@ def generate_flashcards_endpoint():
         if not topic:
             return jsonify({"error": "Topic is required"}), 400
 
-        flashcards = generator.generate_flashcards(topic=topic, count=count)  # ✅ Already correct
+        flashcards = generator.generate_flashcards(topic=topic, count=count)  
         return jsonify({"status": "success", "data": flashcards})
     except Exception as e:
         logger.error(f"Error in flashcard generation: {str(e)}")

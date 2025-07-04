@@ -2,9 +2,9 @@ from educhain import EduChainGenerator
 
 def generate_educational_content(topic):
     generator = EduChainGenerator()
-    # Generate MCQs
+    
     mcqs = generator.generate_mcqs(topic=topic, count=5)
-    # Generate lesson plan
+   
     lesson_plan = generator.generate_lesson_plan(topic=topic)
     
     return {
